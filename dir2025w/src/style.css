@@ -9,6 +9,7 @@
     --background-color: #329696;
 
     color: var(--text-color);
+    background-color: #ddd;
 }
 
 body {
@@ -71,10 +72,9 @@ header {
 /* MAIN */
 
 main {
-    padding: 25px 10px 0 10px;
+    padding: 25px 10px;
 
-    height: 500px;
-    background-color: #ddd;
+    min-height: 700px;
 }
 
 /* FOOTER */
@@ -82,7 +82,7 @@ main {
 footer {
     padding: 0px 10px;
 
-    min-height: 150px;
+    min-height: 215px;
     background-color: var(--background-color);
 }
 
@@ -125,4 +125,14 @@ figcaption {
     justify-self: center;
 
     font-size: 12px;
+}
+
+/* DOWNLOADS PAGE */
+.download {
+    color: #034575;
+}
+
+.download:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }

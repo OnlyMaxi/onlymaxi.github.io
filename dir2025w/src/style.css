@@ -1,0 +1,128 @@
+/* ROOT AND VAR DEFS */
+
+:root {
+    font-family: "Arial", "Helvetica", "sans-serif";
+
+    --text-color: #111;
+    --text-color-alt: #444;
+    --background-color: #329696;
+    --background-color: #329696;
+
+    color: var(--text-color);
+}
+
+body {
+    margin: 0px;
+}
+
+/* DEFAULT ELEMENT STYLES */
+
+a {
+    color: var(--text-color);
+    text-decoration: unset;
+}
+
+a:hover {
+    color: var(--text-color-alt);
+    text-decoration: underline;
+}
+
+/* HEADER */
+
+header {
+
+}
+
+.logo {
+    height: 70px;
+}
+
+#logo-top-left {
+    position: absolute;
+}
+
+/* NAV */
+
+#navigation {
+    padding-left: 140px; /* for top left logo */
+
+    height: 70px;
+    background-color: var(--background-color);
+
+    display: flex;
+    align-items: center;
+
+    font-weight: bold;
+}
+
+.nav-link {
+    padding: 0 1em;
+
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+}
+
+#first-nav-link {
+    padding-left: 2em; /* first element needs double left padding */
+}
+
+/* MAIN */
+
+main {
+    padding: 25px 10px 0 10px;
+
+    height: 500px;
+    background-color: #ddd;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 0px 10px;
+
+    min-height: 150px;
+    background-color: var(--background-color);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+}
+
+.footer-column {
+    width: 200px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-bottom {
+    margin: 0 5%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 5%
+}
+
+#language-select {
+    margin-left: auto;
+}
+
+/* IMAGES */
+#virus1 {
+    position: absolute;
+    top: 120px;
+    right: 20px;
+
+    height: 200px;
+}
+
+figcaption {
+    justify-self: center;
+
+    font-size: 12px;
+}

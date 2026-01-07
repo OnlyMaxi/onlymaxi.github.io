@@ -144,6 +144,12 @@ figcaption {
     text-decoration: underline;
 }
 
+/* contact form */
+
+fieldset input, fieldset textarea {
+    width: 100%;
+}
+
 /* FOOTER */
 
 footer {

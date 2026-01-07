@@ -82,6 +82,10 @@ main > * {
     padding-left: 10px;
 }
 
+main > ul {
+    padding-inline-start: 40px;
+}
+
 .insert {
     padding: 0;
 

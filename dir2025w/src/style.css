@@ -5,8 +5,7 @@
 
     --text-color: #111;
     --text-color-alt: #444;
-    --background-color: #329696;
-    --background-color: #329696;
+    --secondary-color: #329696;
 
     color: var(--text-color);
     background-color: #ddd;
@@ -48,7 +47,7 @@ header {
     padding-left: 140px; /* for top left logo */
 
     height: 70px;
-    background-color: var(--background-color);
+    background-color: var(--secondary-color);
 
     display: flex;
     align-items: center;
@@ -72,9 +71,73 @@ header {
 /* MAIN */
 
 main {
-    padding: 25px 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 
     min-height: 700px;
+}
+
+main > * {
+    padding-left: 10px;
+    padding-left: 10px;
+}
+
+.insert {
+    padding: 0;
+
+    background-color: var(--secondary-color);
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.insert-column {
+    width: 600px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.insert-column h3 {
+    padding: 0 20px;
+}
+
+.insert-column p {
+    margin-top: 0;
+    padding: 0 20px;
+}
+
+
+/* images */
+figure {
+    position: relative;
+    max-height: 400px;
+
+    justify-content: center;
+    text-align: center;
+}
+
+figure img {
+    max-height: 350px;
+    max-width: 500px;
+}
+
+figcaption {
+    justify-self: center;
+
+    font-size: 12px;
+}
+
+/* downloads */
+.download {
+    color: #034575;
+}
+
+.download:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 /* FOOTER */
@@ -83,7 +146,7 @@ footer {
     padding: 0px 10px;
 
     min-height: 215px;
-    background-color: var(--background-color);
+    background-color: var(--secondary-color);
 }
 
 .footer-container {
@@ -110,29 +173,4 @@ footer {
 
 #language-select {
     margin-left: auto;
-}
-
-/* IMAGES */
-#virus1 {
-    position: absolute;
-    top: 120px;
-    right: 20px;
-
-    height: 200px;
-}
-
-figcaption {
-    justify-self: center;
-
-    font-size: 12px;
-}
-
-/* DOWNLOADS PAGE */
-.download {
-    color: #034575;
-}
-
-.download:hover {
-    cursor: pointer;
-    text-decoration: underline;
 }
